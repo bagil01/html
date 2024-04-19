@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('imagem de fundo.png'); /* Substitua pelo caminho da sua imagem de fundo */
+        }
+
+        .form-container {
+            width: 50%;
+            padding: 30px 35px;
+            background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente para destacar o formulário */
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.307);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 50%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .name-group {
+            display: flex;
+            justify-content:left;
+    
+        }
+
+        .name-group input {
+            width: 70%; /* Usando 48% para evitar margens laterais */
+        }
+
+        button {
+            width: 20%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0b07fc; /* Cor de fundo alterada */
+        }
+
+    </style>
+</head>
+<body>
+<main class="form-container">
+    <form action="#" method="post">
+        <div class="form-group name-group">
+            <div>
+                <label for="first-name">Nome:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div>
+                <label for="last-name">Sobrenome:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="form-group">
+            <label for="confirm-password">Confirmar Senha:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Cadastrar</button>
+        </div>
+        <a href="telaPincipal.html">voltar</a>
+    </form>
+</main>
+</body>
+</html>
