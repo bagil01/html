@@ -4,10 +4,10 @@ body{
 }
  /* Estilizando o cabeçalho */
  header {
-    background-image: url('imagem\ de\ fundo.png'); /* URL da imagem de fundo */
+    background-image: url('fundo.png'); /* URL da imagem de fundo */
     background-size: cover; /* Ajusta a imagem de fundo para cobrir todo o cabeçalho */
     background-position: center; /* Centraliza a imagem de fundo */
-    color: #000000; /* Cor do texto no cabeçalho */
+    color: #fff; /* Cor do texto no cabeçalho */
     text-align: center; /* Alinhamento do texto */
     padding: 100px 0; /* Espaçamento interno do cabeçalho */
 }
