@@ -5,54 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>coordenação</title>
     <link rel="stylesheet" href="style.css">
-    
     <style>
-        .fotosc{
-            margin: 15px 15px;
-            margin-top: 25px;
-            display: flex;
-        }
-        .textos{
-            margin: 15px 15px;
-            margin-top: 25px;
-        }
-    </style>
+    
+    .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px; /* Espaçamento entre as imagens */
+    }
+
+    .image {
+        width: 70%; /* Largura de 70% */
+        flex: 0 0 calc(25% - 25px); /* Define a largura das imagens */
+    }
+
+    .image img {
+        width: 90%;
+        height: 60%;
+        display: block;
+    }
+
+    .image h3 {
+        margin-top: 0; /* Remove o espaçamento superior do título */
+        justify-content: center;
+    }
+</style>
 </head>
 <body>
-     <!--cabeçalho-->
-    <header>
-    <h1> Coletiva de Estudantes Quilombolas - CEQ</h1>
-    <h2>historias, Cultura, tradição, tudo em um so ligar, Acervo Digital de Cultura Quilombola</h2>
+<!-- Cabeçalho -->
+<header>
+    <h1>Coletiva de Estudantes Quilombolas - CEQ</h1>
+    <h2>Histórias, Cultura, Tradição, tudo em um só lugar, Acervo Digital de Cultura Quilombola</h2>
 </header>
-        <!-- Menu Interativo -->
-        <nav>
-            <ul>
-                <li><a href="Paginavideo.html">videos</video></a></li>
-                <li><a href="fotos.html">fotos</a></li>
-                <li><a href="">homenagem</a></li>
-                <li><a href="coordenaçao.html">Coordenação</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-        
+
+<!-- Menu Interativo -->
+<nav>
+    <ul>
+        <li><a href="paginadoColetivo.html">Inicio</a></li>
+        <li><a href="Paginadevideos.html">Videos</a></li>
+        <li><a href="fotos.html">Fotos</a></li>
+        <li><a href="#">Homenagem</a></li>
+        <li><a href="coordenaçao.html">Coordenação</a></li>
+        <li>
+            <a href="#">Contato</a>
+            <div class="submenu">
+                <a href="mailto:cequfopa025@gmailcom">Email</a>
+                <a href="https://www.instagram.com/ceq.ufopa.oficial?igsh=MXN3Z2xyOXJ5ZTRoaQ==" target="_blank">Instagram</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+
 <hr class="custom-line">
-<div class="texto">
-    <h1>Descrição</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci commodi earum exercitationem? Sapiente dolore quisquam nemo error est autem atque nostrum, deleniti aut cum minima natus sint neque vero ipsa.lorem.   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo excepturi nesciunt adipisci quas ut doloremque vitae aliquam, reiciendis laudantium recusandae saepe dolores vero, totam officia officiis tempore accusantium unde? Natus.</p>
-</div>
-<div class="fotosc">
-    <img src="teste 1.jpg" alt="coordenaçao geral">
-</div>
-<div class="fotosc">
-    <img src="teste 1.jpg" alt="coordenaçao geral">
-</div>
-<div class="textos">
-    <p>coordenadora geral</p>
-    <p>lais amanda azevedo</p>
+
+<!-- Imagens -->
+<div class="image-container">
+    <div class="image">
+        <img src="teste 1.jpg" alt="Imagem 1">
+        <h3>Titulo da foto</h3>
+        <p>Descrição da foto</p>
+    </div>
+    <div class="image">
+        <img src="teste 1.jpg" alt="Imagem 2">
+        <h3>Titulo da foto</h3>
+        <p>Descrição da foto</p>
+    </div>
+    <div class="image">
+        <img src="teste 1.jpg" alt="Imagem 3">
+        <h3>Titulo da foto</h3>
+        <p>Descrição da foto</p>
+    </div>
+    <div class="image">
+        <img src="teste 1.jpg" alt="Imagem 4">
+        <h3>Titulo da foto</h3>
+        <p>Descrição da foto</p>
+    </div>
+    <div class="image">
+        <img src="teste 1.jpg">
+        <h3>Titulo da foto</h3>
+        <p>Descrição da foto</p>
+    </div>
+    <div class="image">
+        <img src="teste 1.jpg" alt="Imagem 6">
+        <h3>Titulo da foto</h3>
+        <p>Descrição da foto</p>
+    </div>
 </div>
 
+<!-- Rodapé -->
 <footer>
     <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
-  </footer>
+</footer>
 </body>
 </html>

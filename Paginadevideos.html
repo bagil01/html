@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Videos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .texto>p{
+            margin: 15px;
+        }
+        .video-container {
+            display: flex;
+            flex-wrap: wrap; /* Permite que os vídeos quebrem para a próxima linha se não couberem na mesma linha */
+            justify-content: space-between;
+            gap: 20px; /* Espaçamento entre os vídeos */
+        }
+
+        .video {
+            width: calc(33.33% - 20px); /* Define a largura dos vídeos para aproximadamente 1/3 da tela */
+            flex: 0 0 calc(33.33% - 20px);
+        }
+
+        .video video {
+            width: 100%;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .video h3, .video h4 {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Coletivo de Estudantes Quilombolas - CEQ</h1>
+        <h2>Histórias, Cultura, Tradição, tudo em um só lugar, Acervo Digital de Cultura Quilombola</h2>
+    </header>
+
+    <!-- Menu Interativo -->
+    <nav>
+        <ul>
+            <li><a href="paginadoColetivo.html">Inicio</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="fotos.html">Fotos</a></li>
+            <li><a href="#">Homenagem</a></li>
+            <li><a href="coordenaçao.html">Coordenação</a></li>
+        </ul>
+    </nav>
+    
+    <hr class="custom-line">
+    
+    <!-- Descrição -->
+    <div class="texto">
+        <h1>Descrição</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci commodi earum exercitationem? Sapiente dolore quisquam nemo error est autem atque nostrum, deleniti aut cum minima natus sint neque vero ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo excepturi nesciunt adipisci quas ut doloremque vitae aliquam, reiciendis laudantium recusandae saepe dolores vero, totam officia officiis tempore accusantium unde? Natus.
+        </p>
+    </div>
+
+    <hr class="custom-line">
+
+    <!-- Vídeos -->
+    <div class="video-container">
+        <div class="video">
+            <video controls>
+                <source src="videoteste.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <h3>Título do Vídeo 1</h3>
+            <h4>Descrição do Vídeo 1</h4>
+        </div>
+        <div class="video">
+            <video controls>
+                <source src="videoteste2.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <h3>Título do Vídeo 2</h3>
+            <h4>Descrição do Vídeo 2</h4>
+        </div>
+        <div class="video">
+            <video controls>
+                <source src="videoteste2.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <h3>Título do Vídeo 3</h3>
+            <h4>Descrição do Vídeo 3</h4>
+        </div>
+        <div class="video">
+            <video controls>
+                <source src="videoteste2.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <h3>Título do Vídeo 3</h3>
+            <h4>Descrição do Vídeo 3</h4>
+        </div>
+        <div class="video">
+            <video controls>
+                <source src="videoteste2.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <h3>Título do Vídeo 3</h3>
+            <h4>Descrição do Vídeo 3</h4>
+        </div>
+        <div class="video">
+            <video controls>
+                <source src="videoteste2.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <h3>Título do Vídeo 3</h3>
+            <h4>Descrição do Vídeo 3</h4>
+        </div>
+    </div>
+
+    <!-- Voltar para a tela inicial -->
+    <a href="telaPincipal.html">Voltar para a tela inicial</a>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

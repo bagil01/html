@@ -6,12 +6,10 @@
     <title>Link para Próxima Página</title>
     <link rel="stylesheet" href="style.css">
     <style>
-    
-        .h1{
-            justify-content: center;
-        }
-            /* Estilos básicos para os botões */
-            .button-container {
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Sedan:ital@0;1&display=swap');
+
+        /* Estilos básicos para os botões */
+        .button-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -21,8 +19,11 @@
 
         .my-button {
             padding: 40px 25px; /* Redução do tamanho do botão */
-            background-color: #1d7804; /* Cor de fundo do botão */
-            color: #fff; /* Cor do texto do botão */
+            background-color:rgb(0, 0, 0); /* Cor de fundo do botão */
+            font-family: "Sedan", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #900707; /* Cor do texto do botão */
             border: none; /* Remove a borda */
             border-radius: 5px; /* Adiciona cantos arredondados */
             cursor: pointer; /* Altera o cursor ao passar o mouse */
@@ -35,63 +36,67 @@
 
         /* Estilo do botão quando o mouse passa por cima */
         .my-button:hover {
-            background-color: #124c02; /* Cor de fundo alterada */
-        
+            background-color: #4c0202; /* Cor de fundo alterada */
         }
     </style>
-
 </head>
 <body>
+    <!--cabeçalho-->
     <header>
-
         <h1>Acervo Digital de Cultura Quilombola - Seu Dadá</h1>
         <h2>historias, Cultura, tradição, tudo em um so lugar.</h2>
-        </header>
- <!-- Menu Interativo -->
-          <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">doação</a></li>
-            </ul>
-        </nav>
-           
+    </header>
 
+    <!-- Menu Interativo -->
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">doação</a></li>
+        </ul>
+    </nav>
+           
+    <!--linha horizontal-->
     <hr class="custom-line">
 
     <!-- Container para os botões -->
     <div class="button-container">
         <!-- Botões -->
-        <button class="my-button">CEQ</button>
+        <button id="ceqButton" class="my-button">CEQ</button>
         <button class="my-button">FOQS</button>
         <button class="my-button">Murumuru</button>
         <button class="my-button">Murumurutuba</button>
         <button class="my-button">Tiningu</button>
         <button class="my-button">Bom Jardim</button>
         <button class="my-button">Saracura</button>
-        <button class="my-button">Boa Vista</button>
+        <button class="my-button">Nova Vista do Ituqui</button>
         <button class="my-button">Arapemã</button>
-        <button class="my-button">Maica</button>
-        <button class="my-button">Surubim</button>
-        <button class="my-button">Pacoval</button>
-        <button class="my-button">Botão 13</button>
-        <button class="my-button">Botão 14</button>
-        <button class="my-button">Botão 15</button>
+        <button class="my-button">Maicá</button>
+        <button class="my-button">Surubim Açu</button>
+        <button class="my-button">São José do Ituqui</button>
+        <button class="my-button">JP</button>
+        <button class="my-button">Patos do Ituqui</button>
+        <button class="my-button">São Raimundo do Ituqui</button>
     </div>
-    <a href="Paginavideo.html">videos</a>
 
+    <!--Parceiros-->
     <div class="Parceiros"> 
-        <h1 > Parceiros </h1>
+        <h1> Parceiros </h1>
         <img src="logo ufopa.jpeg" alt="logo ufopa">
-    </div>
+    </div>  
 
-       
-        
     <!-- Rodapé -->
     <footer>
         <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
     </footer>
+
+    <!-- Script JavaScript -->
+    <script>
+        document.getElementById("ceqButton").addEventListener("click", function() {
+            window.location.href = "paginadoColetivo.html";
+        });
+    </script>
 </body>
 </html>
