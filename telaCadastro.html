@@ -92,12 +92,14 @@
             <label for="confirm-password">Confirmar Senha:</label>
             <input type="password" id="confirm-password" name="confirm-password" required>
         </div>
-
         <div class="form-group">
-            <button type="submit">Cadastrar</button>
+            <button id="CadastrarButton" type="submit">Cadastrar</button>
         </div>
-        <a href="telaInicial.html">voltar</a>
     </form>
 </main>
+<script>
+    document.getElementById("CadastrarButton").addEventListener("click", function() {
+        window.location.href = "telainicial.html";
+    });</script>
 </body>
 </html>
