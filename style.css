@@ -77,6 +77,37 @@ li:hover .submenu {
 .submenu a:hover {
     text-decoration: underline;
 }
+/* Estilos base */
+body {
+    font-size: 16px; /* Define o tamanho base da fonte */
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduz a fonte para telas menores */
+    }
+
+    .button-container {
+        flex-wrap: wrap; /* Altera o fluxo dos botões */
+        gap: 10px; /* Reduz o espaçamento entre os botões */
+    }
+
+    .my-button {
+        padding: 30px 20px; /* Reduz o padding dos botões */
+    }
+
+    /* Mais estilos para telas menores */
+}
+
+/* Estilos para telas maiores */
+@media (min-width: 1200px) {
+    .button-container {
+        gap: 60px; /* Aumenta o espaçamento entre os botões */
+    }
+
+    /* Mais estilos para telas maiores */
+}
 
 /* Estilos básicos para o rodapé */
 footer {
